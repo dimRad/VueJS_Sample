@@ -1,1 +1,3 @@
-# VueJS_Sample
+Simpele Store 
+
+used Vue.js

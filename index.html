@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Vue Mastery</title>
+  <!-- Import Styles -->
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div class="nav-bar"></div>
+    <div class="cart">Cart {{cart}} </div>
+    <product-display :premium="premium" @add-to-cart="updateCart"></product-display>
+    
+   
+  </div>
+
+  <script src="./main.js"></script>
+  <script src="./components/productDisplay.js"></script>
+  <script src="./components/reviewForm.js"></script>
+  <script src="./components/reviewList.js"></script>
+  <script>
+    const mountedApp = app.mount('#app');
+  </script>
+</body>
+
+</html>
